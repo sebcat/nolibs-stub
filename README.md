@@ -14,7 +14,6 @@ $ make
 nasm  -felf64 -o entry.o entry.asm
 nasm  -felf64 -o io.o io.asm
 clang -Os -Wno-incompatible-library-redeclaration -c -o main.o main.c
-clang -Os -Wno-incompatible-library-redeclaration -c -o string.o string.c
 ld -o demo entry.o io.o main.o string.o
 strip -s -R .eh_frame demo
 ```
