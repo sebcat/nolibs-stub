@@ -9,4 +9,6 @@ typedef unsigned int uid_t;
 typedef unsigned int gid_t;
 typedef void* caddr_t; 
 typedef unsigned long off_t;
+typedef unsigned int u_int;
+typedef unsigned char u_char;
 #endif
