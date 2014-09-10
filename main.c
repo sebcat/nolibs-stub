@@ -1,6 +1,5 @@
-#include "io.h"
-
-typedef unsigned long size_t;
+#include <syscalls/sys_write.h>
+#include <systm/io.h>
 
 size_t strlen(const char *s)
 {
@@ -14,7 +13,7 @@ size_t strlen(const char *s)
 
 // No newline, so not really puts
 int puts(const char *str) {
-	return write(STDOUT_FILENO, str, strlen(str));
+	return sys_write(STDOUT_FILENO, str, strlen(str));
 }
 
 int main(int argc, char *argv[]) {

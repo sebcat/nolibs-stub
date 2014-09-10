@@ -31,6 +31,6 @@ Hello, World!
 ## Project files
 * entry.asm - ELF entry point, calls main
 * main.c - main
-* io.asm - I/O syscall wrappers
-* io.h - header for io.asm
+* syscalls/* - syscall wrappers
+* systm/* - system defines
 
